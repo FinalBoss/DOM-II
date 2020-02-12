@@ -113,3 +113,56 @@ softyIMG.src = '/img/crazyassbs.gif';
  
 setTimeout(loading, 9000)
 
+
+//Change Text
+
+const cabTitle =  document.querySelector('.logo-heading');
+
+const ponR = document.querySelector('.intro h2')
+
+const hellY = document.querySelector('.text-content h2')
+
+const restOfH2s = document.querySelectorAll('.text-content h2')
+
+const nightmare = restOfH2s[1]
+
+const pyP = document.querySelector('.content-destination h2')
+
+const destiny = document.querySelectorAll('.destination h4')
+
+const hotHeat = destiny[0]
+const cBungee = destiny[1]
+const eStreet = destiny[2]
+
+
+
+//Draggable Content
+
+
+
+
+cabTitle.addEventListener('dragend', function(event) {cabTitle.textContent = 'Crazy A** Bus'     
+event.stopPropagation()
+})
+
+
+
+ponR.addEventListener("dragenter", function(event) {
+  
+      ponR.textContent = "Welcome to the point of no return!";
+  });
+
+
+  document.addEventListener("dragover", function(event) {
+    event.preventDefault();
+    event.stopPropagation()
+  });
+
+hellY.addEventListener('dragend', function(event) {hellY.textContent = "Hell Yeah! [H]"})
+nightmare.addEventListener('dragend', function(event) {nightmare.textContent = 'Nightmares Await [N]'})
+pyP.addEventListener('dragend', function(event) {pyP.textContent = 'Pick your poison [P]'})
+hotHeat.addEventListener('dragend', function(event) {hotHeat.textContent = 'Scorching Heat [S]'})
+cBungee.addEventListener('dragend', function(event) {cBungee.textContent = 'Cordless Bungee [C]'})
+eStreet.addEventListener('dragend', function(event) {eStreet.textContent = 'Elm Street? [E]'})
+
+
