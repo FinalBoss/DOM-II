@@ -180,3 +180,15 @@ footsie[0].style.color = 'red'
 }
 
 document.addEventListener('keydown', copyright)
+
+//Initialize images
+let imgZero = document.querySelector('.adventure')
+let imgOne = document.querySelector('.fun')
+let imgTwo = document.querySelector('.slide')
+
+
+
+
+imgZero.onmouseover = function() {imgZero.src = '/img/highwaytohell.gif'}
+imgOne.onmouseover = function() {imgOne.src = '/img/lets_roll.jpg'}
+imgTwo.onmouseover = function() {imgTwo.src = '/img/coolfreddy.gif'}
