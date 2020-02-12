@@ -40,4 +40,30 @@ for (let i = 0; i < txtCABBT.length; i++){
 }
 
 
+//Create New Elements
+
+//New Images
+let transormImg = document.createElement('img').src = '/img/transforming.gif';
+let crazyAzzBusImg = document.createElement('img').src = '/img/crazyassbus.gif';
+
+//Set width
+transormImg.style.width = '';
+crazyAzzBusImg.style.width=
+
+//Get Parent Image
+
+let softyIMG = document.querySelector('[alt~=bus]');
+
+//Animate Parent Image
+
+
+
+//New Button
+
+let transformBtn = document.createElement('div');
+
+
+
+
+//Event Handlers
 
