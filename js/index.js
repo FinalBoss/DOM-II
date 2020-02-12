@@ -37,33 +37,79 @@ for (let i = 0; i < txtCABBT.length; i++){
 
 }
 
-}
 
 
 //Create New Elements
 
 //New Images
-let transormImg = document.createElement('img').src = '/img/transforming.gif';
-let crazyAzzBusImg = document.createElement('img').src = '/img/crazyassbus.gif';
+let transormImg = document.createElement('img');
+transormImg.src = '/img/cab.gif';
 
 //Set width
-transormImg.style.width = '';
-crazyAzzBusImg.style.width=
+transormImg.style.width = '1000px';
+
+
+//Animate Parent Image
+
+
+ source[0].replaceChild(transormImg, softyIMG);
+  
+
+
+}
+
+
+//Get source of parent image
+
+let source = document.querySelectorAll('.intro');
 
 //Get Parent Image
 
 let softyIMG = document.querySelector('[alt~=bus]');
 
-//Animate Parent Image
-
-
-
 //New Button
 
-let transformBtn = document.createElement('div');
+let transformBtn = document.createElement('button');
+
+//updating button
+transformBtn.textContent = "Bored?";
 
 
+//Adding Button to html
+
+function addCrazy(){
+
+source[0].prepend(transformBtn)
+}
+
+setTimeout(addCrazy, 10000)
 
 
 //Event Handlers
+
+//Transform Page
+transformBtn.onclick = crazyAzzBus;
+
+
+//Transform Back
+
+function reld() {
+
+    location.reload();
+}
+
+transformBtn.addEventListener('dblclick', reld)
+
+//Loading IMG
+
+function loading(){
+
+softyIMG.style.width = '1000px'
+softyIMG.style.height= '300px'
+
+softyIMG.src = '/img/crazyassbs.gif';
+
+}
+ 
+setTimeout(loading, 9000)
 
