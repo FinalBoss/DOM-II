@@ -165,4 +165,18 @@ hotHeat.addEventListener('dragend', function(event) {hotHeat.textContent = 'Scor
 cBungee.addEventListener('dragend', function(event) {cBungee.textContent = 'Cordless Bungee [C]'})
 eStreet.addEventListener('dragend', function(event) {eStreet.textContent = 'Elm Street? [E]'})
 
+  
+function copyright (){
 
+   let footsie =  document.querySelectorAll('.footer')
+
+
+footsie[0].style.fontSize = '1.6rem'
+footsie[0].style.textAlign = 'center'
+footsie[0].style.padding = '20px'
+footsie[0].style.color = 'red'
+    footsie[0].textContent = 'Copyright Crazy A** Bus 2020'
+
+}
+
+document.addEventListener('keydown', copyright)
