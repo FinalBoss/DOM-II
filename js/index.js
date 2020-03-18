@@ -100,6 +100,9 @@ function reld() {
 
 transformBtn.addEventListener('dblclick', reld)
 
+
+
+
 //Loading IMG
 
 function loading(){
